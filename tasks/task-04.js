@@ -8,7 +8,7 @@ if (orderQuantity === null) {
 } else {
   let totalPrice = orderQuantity * pricePerDroid;
 
-  if (totalPrice > credits) {
+  if (totalPrice >= credits) {
     console.log("Недостаточно средств на счету!");
   }
 

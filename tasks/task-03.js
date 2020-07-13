@@ -1,13 +1,13 @@
-  
 const ADMIN_PASSWORD = "jqueryismyjam";
 let message;
 
-const password = prompt("Введите пароль:");
-
-password
-  ? password === ADMIN_PASSWORD
-    ? (message = "Добро пожаловать!")
-    : (message = "Доступ запрещен, неверный пароль!")
-  : (message = "Отменено пользователем!");
+message = prompt("Введите пароль:");
+if (message === "jqueryismyjam") {
+  console.log(message = "Добро пожаловать!");
+} else if (message === null) {
+  console.log(message = "Отменено пользователем!");
+} else if (message !== "jqueryismyjam") {
+  console.log(message = "Доступ запрещен, неверный пароль!");
+}
 
 alert(message);
